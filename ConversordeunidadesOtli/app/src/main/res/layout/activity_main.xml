@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_Peso"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E91E63"
+            android:onClick="vistaPeso"
+            android:padding="10dp"
+            android:shadowRadius="@dimen/material_emphasis_high_type"
+            android:text="Peso"
+            android:textSize="34sp"
+            app:cornerRadius="20dp"
+            app:iconGravity="top" />
+
+        <Button
+            android:id="@+id/btn_Longitud"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E91E63"
+            android:onClick="vistaLongitud"
+            android:padding="10dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:shadowRadius="@dimen/material_emphasis_high_type"
+            android:text="Longitud"
+            android:textSize="34sp"
+            app:cornerRadius="20dp"
+            app:iconGravity="top"
+            app:iconSize="30dp" />
+
+        <Button
+            android:id="@+id/btn_Volumen"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E91E63"
+            android:onClick="vistaVolumen"
+            android:padding="10dp"
+            android:shadowRadius="@dimen/material_emphasis_high_type"
+            android:text="Volumen"
+            android:textSize="34sp"
+            app:cornerRadius="20dp"
+            app:iconGravity="top"
+            app:iconSize="30dp" />
+
+        <Button
+            android:id="@+id/btn_Temperatura"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E91E63"
+            android:onClick="vistaTemperatura"
+            android:padding="10dp"
+            android:shadowRadius="@dimen/material_emphasis_high_type"
+            android:text="Temperatura"
+            android:textSize="34sp"
+            app:cornerRadius="20dp"
+            app:iconGravity="top"
+            app:iconSize="30dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
